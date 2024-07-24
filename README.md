@@ -6,7 +6,11 @@ a tcp port scanner, both of a specific ip and of specific sites, created complet
 - pip `>= 22.0.0`
 
 # installation instructions 📘
-### clone this repository with `git clone` and install the requirement.txt
-> citazione
+### clone this repository with `git clone` and install the requirements.txt
+```shell
+git clone https://github.com/PietroLoparco/PortScanner.git
+cd pscanner
+python -m pip install -r requirements.txt
+```
 
 # Usage 
