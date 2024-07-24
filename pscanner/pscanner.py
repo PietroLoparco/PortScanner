@@ -8,7 +8,10 @@ from ipaddress import ip_address
 from scapy.all import ARP, Ether, srp
 from datetime import datetime
 
-parser = ArgumentParser(description="Host port scanner.")
+parser = ArgumentParser(
+    description="Host port scanner.",
+    usage="%(prog)s [options] [options argument]",
+    epilog="example: %(prog)s -ip <ip> --start_port <start_port> --end_port <end_port>")
 parser.add_argument('-ip', type=str, help="Set target ip")
 parser.add_argument('-url', type=str, help="Set target url")
 parser.add_argument('--start_port', type=int, help="Set the port where scanning will begin (Default 1)")
