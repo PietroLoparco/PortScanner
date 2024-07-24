@@ -1,4 +1,7 @@
 ## Port Scanner
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Python Versions](https://img.shields.io/pypi/pyversions/portscanner)
+
 a simply tcp port scanner, both of a specific ip and of specific sites, created completely by me, based on the services configured in the nmap "service" file.
 
 ## requisites 🚨
@@ -41,5 +44,5 @@ python pscanner.py -ip 192.168.1.1 --start_port 1 --end_port 100
 - `h, --help`: Displays the help message and exits.
 - `ip IP`: Specifies the target IP address for scanning.
 - `url URL`: Specifies the target URL for scanning. If provided, this will resolve to an IP address before scanning.
--- `start_port START_PORT`: Defines the starting port for the scan. Default is 1.
--- `end_port END_PORT`: Defines the ending port for the scan. Default is 1024.
+- `--start_port START_PORT`: Defines the starting port for the scan. Default is 1.
+- `--end_port END_PORT`: Defines the ending port for the scan. Default is 1024.
