@@ -30,3 +30,16 @@ options:
 
 example: pscanner.py -ip <ip> --start_port <start_port> --end_port <end_port>
 ```
+
+## Examples 💡
+#### Scan a specific IP address for ports in the range 1-100:
+```shell
+python pscanner.py -ip 192.168.1.1 --start_port 1 --end_port 100
+```
+
+# Options Breakdown 📜
+- `h, --help`: Displays the help message and exits.
+- `ip IP`: Specifies the target IP address for scanning.
+- `url URL`: Specifies the target URL for scanning. If provided, this will resolve to an IP address before scanning.
+-- `start_port START_PORT`: Defines the starting port for the scan. Default is 1.
+-- `end_port END_PORT`: Defines the ending port for the scan. Default is 1024.
